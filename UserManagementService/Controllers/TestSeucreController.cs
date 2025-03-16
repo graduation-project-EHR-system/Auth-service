@@ -8,6 +8,7 @@ namespace UserManagementService.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize(Roles = "Admin")]
     public class TestSeucreController : ControllerBase
     {
         [HttpGet]

@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "/home/shehab/Desktop/GP/UserManagementService/Service.Layer/Service.Layer.csproj": {}
+    "E:\\GP\\Auth Service\\Service.Layer\\Service.Layer.csproj": {}
   },
   "projects": {
-    "/home/shehab/Desktop/GP/UserManagementService/Data.Layer/Data.Layer.csproj": {
+    "E:\\GP\\Auth Service\\Data.Layer\\Data.Layer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/shehab/Desktop/GP/UserManagementService/Data.Layer/Data.Layer.csproj",
+        "projectUniqueName": "E:\\GP\\Auth Service\\Data.Layer\\Data.Layer.csproj",
         "projectName": "Data.Layer",
-        "projectPath": "/home/shehab/Desktop/GP/UserManagementService/Data.Layer/Data.Layer.csproj",
-        "packagesPath": "/home/shehab/.nuget/packages/",
-        "outputPath": "/home/shehab/Desktop/GP/UserManagementService/Data.Layer/obj/",
+        "projectPath": "E:\\GP\\Auth Service\\Data.Layer\\Data.Layer.csproj",
+        "packagesPath": "C:\\Users\\badry.anas\\.nuget\\packages\\",
+        "outputPath": "E:\\GP\\Auth Service\\Data.Layer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/shehab/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\badry.anas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -68,34 +71,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/shehab/Desktop/GP/UserManagementService/Service.Layer/Service.Layer.csproj": {
+    "E:\\GP\\Auth Service\\Service.Layer\\Service.Layer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/shehab/Desktop/GP/UserManagementService/Service.Layer/Service.Layer.csproj",
+        "projectUniqueName": "E:\\GP\\Auth Service\\Service.Layer\\Service.Layer.csproj",
         "projectName": "Service.Layer",
-        "projectPath": "/home/shehab/Desktop/GP/UserManagementService/Service.Layer/Service.Layer.csproj",
-        "packagesPath": "/home/shehab/.nuget/packages/",
-        "outputPath": "/home/shehab/Desktop/GP/UserManagementService/Service.Layer/obj/",
+        "projectPath": "E:\\GP\\Auth Service\\Service.Layer\\Service.Layer.csproj",
+        "packagesPath": "C:\\Users\\badry.anas\\.nuget\\packages\\",
+        "outputPath": "E:\\GP\\Auth Service\\Service.Layer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/shehab/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\badry.anas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/shehab/Desktop/GP/UserManagementService/Data.Layer/Data.Layer.csproj": {
-                "projectPath": "/home/shehab/Desktop/GP/UserManagementService/Data.Layer/Data.Layer.csproj"
+              "E:\\GP\\Auth Service\\Data.Layer\\Data.Layer.csproj": {
+                "projectPath": "E:\\GP\\Auth Service\\Data.Layer\\Data.Layer.csproj"
               }
             }
           }
@@ -136,7 +142,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

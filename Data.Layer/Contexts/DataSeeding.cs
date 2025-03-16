@@ -12,7 +12,7 @@ namespace Data.Layer.Contexts
     {
         public async static Task SeedingDataAsync(UserManager<User> userManager , RoleManager<IdentityRole> roleManager)
         {
-            string[] roles = { "Admin", "Doctor", "Patient" };
+            string[] roles = { "Admin", "Doctor", "Receptionist" };
 
             if (userManager.Users.Count() == 0)
             {
@@ -45,7 +45,9 @@ namespace Data.Layer.Contexts
 
             var admin = await userManager.FindByEmailAsync("badry.anas@email.com");
 
-            if (admin != null && await userManager.GetRolesAsync(admin) is null )
+            var RolesFirstUser = await userManager.GetRolesAsync(admin);
+
+            if (admin != null &&  !RolesFirstUser.Any() )
             {
                 await userManager.AddToRoleAsync(admin, "Admin");
             }

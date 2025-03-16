@@ -1,41 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\GP\\UserManagementService\\",
+  "WorkspaceRootPath": "E:\\GP\\Auth Service\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|e:\\gp\\usermanagementservice\\usermanagementservice\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\contexts\\dataseeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\contexts\\dataseeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|e:\\gp\\auth service\\usermanagementservice\\controllers\\testseucrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\controllers\\testseucrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|e:\\gp\\auth service\\usermanagementservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|e:\\gp\\auth service\\usermanagementservice\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|e:\\gp\\usermanagementservice\\usermanagementservice\\helper\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|e:\\gp\\auth service\\usermanagementservice\\helper\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\helper\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B233DFD-CC81-4AD6-8996-54E22B5F0DD3}|Service.Layer\\Service.Layer.csproj|e:\\gp\\usermanagementservice\\service.layer\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4B233DFD-CC81-4AD6-8996-54E22B5F0DD3}|Service.Layer\\Service.Layer.csproj|e:\\gp\\auth service\\service.layer\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B233DFD-CC81-4AD6-8996-54E22B5F0DD3}|Service.Layer\\Service.Layer.csproj|solutionrelative:service.layer\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\usermanagementservice\\data.layer\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\usermanagementservice\\data.layer\\dtos\\refreshtokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\dtos\\refreshtokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\dtos\\refreshtokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\usermanagementservice\\data.layer\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\usermanagementservice\\data.layer\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/./UserManagment/True/SqlTable/dbo.RefreshToken.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|e:\\gp\\usermanagementservice\\usermanagementservice\\controllers\\testseucrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\controllers\\testseucrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -45,7 +53,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,86 +65,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApiResponse.cs",
-              "DocumentMoniker": "E:\\GP\\UserManagementService\\UserManagementService\\Helper\\ApiResponse.cs",
-              "RelativeDocumentMoniker": "UserManagementService\\Helper\\ApiResponse.cs",
-              "ToolTip": "E:\\GP\\UserManagementService\\UserManagementService\\Helper\\ApiResponse.cs",
-              "RelativeToolTip": "UserManagementService\\Helper\\ApiResponse.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAiwA8AAAANAAAA",
+              "DocumentIndex": 0,
+              "Title": "DataSeeding.cs",
+              "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\DataSeeding.cs",
+              "RelativeDocumentMoniker": "Data.Layer\\Contexts\\DataSeeding.cs",
+              "ToolTip": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\DataSeeding.cs",
+              "RelativeToolTip": "Data.Layer\\Contexts\\DataSeeding.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwCUAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T20:36:32.053Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "E:\\GP\\UserManagementService\\Data.Layer\\Interfaces\\IAuthService.cs",
-              "RelativeDocumentMoniker": "Data.Layer\\Interfaces\\IAuthService.cs",
-              "ToolTip": "E:\\GP\\UserManagementService\\Data.Layer\\Interfaces\\IAuthService.cs",
-              "RelativeToolTip": "Data.Layer\\Interfaces\\IAuthService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBEAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T20:30:49.328Z",
+              "WhenOpened": "2025-03-16T20:23:55.884Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "E:\\GP\\UserManagementService\\Data.Layer\\Dtos\\LoginDto.cs",
-              "RelativeDocumentMoniker": "Data.Layer\\Dtos\\LoginDto.cs",
-              "ToolTip": "E:\\GP\\UserManagementService\\Data.Layer\\Dtos\\LoginDto.cs",
-              "RelativeToolTip": "Data.Layer\\Dtos\\LoginDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Data.Layer\\Interfaces\\IAuthService.cs",
+              "ToolTip": "E:\\GP\\Auth Service\\Data.Layer\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "Data.Layer\\Interfaces\\IAuthService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBEAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T20:30:24.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T20:30:49.328Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RefreshTokenDto.cs",
-              "DocumentMoniker": "E:\\GP\\UserManagementService\\Data.Layer\\Dtos\\RefreshTokenDto.cs",
-              "RelativeDocumentMoniker": "Data.Layer\\Dtos\\RefreshTokenDto.cs",
-              "ToolTip": "E:\\GP\\UserManagementService\\Data.Layer\\Dtos\\RefreshTokenDto.cs",
-              "RelativeToolTip": "Data.Layer\\Dtos\\RefreshTokenDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAHAAAA",
+              "DocumentIndex": 9,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Dtos\\LoginDto.cs",
+              "RelativeDocumentMoniker": "Data.Layer\\Dtos\\LoginDto.cs",
+              "ToolTip": "E:\\GP\\Auth Service\\Data.Layer\\Dtos\\LoginDto.cs",
+              "RelativeToolTip": "Data.Layer\\Dtos\\LoginDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T20:29:34.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T20:30:24.437Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "RefreshTokenDto.cs",
+              "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Dtos\\RefreshTokenDto.cs",
+              "RelativeDocumentMoniker": "Data.Layer\\Dtos\\RefreshTokenDto.cs",
+              "ToolTip": "E:\\GP\\Auth Service\\Data.Layer\\Dtos\\RefreshTokenDto.cs",
+              "RelativeToolTip": "Data.Layer\\Dtos\\RefreshTokenDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T20:29:34.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "dbo.RefreshToken [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/./UserManagment/True/SqlTable/dbo.RefreshToken.sql",
               "ToolTip": "dbo.RefreshToken [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-02-14T18:59:39.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T18:59:39.231Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "AuthService.cs",
-              "DocumentMoniker": "E:\\GP\\UserManagementService\\Service.Layer\\AuthService.cs",
+              "DocumentMoniker": "E:\\GP\\Auth Service\\Service.Layer\\AuthService.cs",
               "RelativeDocumentMoniker": "Service.Layer\\AuthService.cs",
-              "ToolTip": "E:\\GP\\UserManagementService\\Service.Layer\\AuthService.cs",
+              "ToolTip": "E:\\GP\\Auth Service\\Service.Layer\\AuthService.cs",
               "RelativeToolTip": "Service.Layer\\AuthService.cs",
               "ViewState": "AQIAAHYAAAAAAAAAAAAiwJEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T21:56:24.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T21:56:24.442Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AccountController.cs",
-              "DocumentMoniker": "E:\\GP\\UserManagementService\\UserManagementService\\Controllers\\AccountController.cs",
+              "DocumentMoniker": "E:\\GP\\Auth Service\\UserManagementService\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "UserManagementService\\Controllers\\AccountController.cs",
-              "ToolTip": "E:\\GP\\UserManagementService\\UserManagementService\\Controllers\\AccountController.cs",
+              "ToolTip": "E:\\GP\\Auth Service\\UserManagementService\\Controllers\\AccountController.cs",
               "RelativeToolTip": "UserManagementService\\Controllers\\AccountController.cs",
               "ViewState": "AQIAACYAAAAAAAAAAAAqwDQAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -145,28 +148,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "UserDto.cs",
-              "DocumentMoniker": "E:\\GP\\UserManagementService\\Data.Layer\\Dtos\\UserDto.cs",
+              "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Dtos\\UserDto.cs",
               "RelativeDocumentMoniker": "Data.Layer\\Dtos\\UserDto.cs",
-              "ToolTip": "E:\\GP\\UserManagementService\\Data.Layer\\Dtos\\UserDto.cs",
+              "ToolTip": "E:\\GP\\Auth Service\\Data.Layer\\Dtos\\UserDto.cs",
               "RelativeToolTip": "Data.Layer\\Dtos\\UserDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T18:14:18.02Z",
+              "WhenOpened": "2025-02-14T18:14:18.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TestSeucreController.cs",
+              "DocumentMoniker": "E:\\GP\\Auth Service\\UserManagementService\\Controllers\\TestSeucreController.cs",
+              "RelativeDocumentMoniker": "UserManagementService\\Controllers\\TestSeucreController.cs",
+              "ToolTip": "E:\\GP\\Auth Service\\UserManagementService\\Controllers\\TestSeucreController.cs",
+              "RelativeToolTip": "UserManagementService\\Controllers\\TestSeucreController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T22:04:02.581Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TestSeucreController.cs",
-              "DocumentMoniker": "E:\\GP\\UserManagementService\\UserManagementService\\Controllers\\TestSeucreController.cs",
-              "RelativeDocumentMoniker": "UserManagementService\\Controllers\\TestSeucreController.cs",
-              "ToolTip": "E:\\GP\\UserManagementService\\UserManagementService\\Controllers\\TestSeucreController.cs",
-              "RelativeToolTip": "UserManagementService\\Controllers\\TestSeucreController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABPAAAA",
+              "DocumentIndex": 4,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "E:\\GP\\Auth Service\\UserManagementService\\Helper\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "UserManagementService\\Helper\\ApiResponse.cs",
+              "ToolTip": "E:\\GP\\Auth Service\\UserManagementService\\Helper\\ApiResponse.cs",
+              "RelativeToolTip": "UserManagementService\\Helper\\ApiResponse.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAiwA8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T22:04:02.581Z"
+              "WhenOpened": "2025-02-14T20:36:32.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\GP\\Auth Service\\UserManagementService\\appsettings.json",
+              "RelativeDocumentMoniker": "UserManagementService\\appsettings.json",
+              "ToolTip": "E:\\GP\\Auth Service\\UserManagementService\\appsettings.json",
+              "RelativeToolTip": "UserManagementService\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-16T20:20:05.829Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -28,3 +28,19 @@ E:/GP/UserManagementService/Service.Layer/obj/Debug/net8.0/ref/Service.Layer.dll
 /home/shehab/Desktop/GP/UserManagementService/Service.Layer/obj/Debug/net8.0/Service.Layer.csproj.CoreCompileInputs.cache
 /home/shehab/Desktop/GP/UserManagementService/Service.Layer/obj/Debug/net8.0/Service..A7E9483A.Up2Date
 /home/shehab/Desktop/GP/UserManagementService/Service.Layer/obj/Debug/net8.0/ref/Service.Layer.dll
+E:\GP\Auth Service\Service.Layer\bin\Debug\net8.0\Service.Layer.deps.json
+E:\GP\Auth Service\Service.Layer\bin\Debug\net8.0\Service.Layer.dll
+E:\GP\Auth Service\Service.Layer\bin\Debug\net8.0\Service.Layer.pdb
+E:\GP\Auth Service\Service.Layer\bin\Debug\net8.0\Data.Layer.dll
+E:\GP\Auth Service\Service.Layer\bin\Debug\net8.0\Data.Layer.pdb
+E:\GP\Auth Service\Service.Layer\obj\Debug\net8.0\Service.Layer.csproj.AssemblyReference.cache
+E:\GP\Auth Service\Service.Layer\obj\Debug\net8.0\Service.Layer.GeneratedMSBuildEditorConfig.editorconfig
+E:\GP\Auth Service\Service.Layer\obj\Debug\net8.0\Service.Layer.AssemblyInfoInputs.cache
+E:\GP\Auth Service\Service.Layer\obj\Debug\net8.0\Service.Layer.AssemblyInfo.cs
+E:\GP\Auth Service\Service.Layer\obj\Debug\net8.0\Service.Layer.csproj.CoreCompileInputs.cache
+E:\GP\Auth Service\Service.Layer\obj\Debug\net8.0\Service.Layer.sourcelink.json
+E:\GP\Auth Service\Service.Layer\obj\Debug\net8.0\Service..A7E9483A.Up2Date
+E:\GP\Auth Service\Service.Layer\obj\Debug\net8.0\Service.Layer.dll
+E:\GP\Auth Service\Service.Layer\obj\Debug\net8.0\refint\Service.Layer.dll
+E:\GP\Auth Service\Service.Layer\obj\Debug\net8.0\Service.Layer.pdb
+E:\GP\Auth Service\Service.Layer\obj\Debug\net8.0\ref\Service.Layer.dll
