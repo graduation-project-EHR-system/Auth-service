@@ -51,12 +51,12 @@ namespace UserManagementService.Controllers
             var result = await _authService.LogoutAsync(refreshTokenDto.RefreshToken);
 
             if (!result)
-                return BadRequest(new ApiResponse(400));
+                return BadRequest(new ApiResponse(400, "There is Something Wrong"));
 
             return Ok(new ApiResponse(200 , "Logged out Successfuly!"));
         }
 
-        [HttpPost("GetRefreshToken")]
+        [HttpPost("Get-Refresh-Token")]
         public async Task<ActionResult<UserDto>> RefreshToken( [FromBody] RefreshTokenDto refreshTokenDto)
         {
             var user = await _authService.GetRefreshToken(refreshTokenDto.RefreshToken);
@@ -69,6 +69,29 @@ namespace UserManagementService.Controllers
                 Data = user 
             });
         }
-        
+
+        [HttpGet("get-user")]
+        public async Task<ActionResult<UserDto>> GetUserFromToken([FromHeader] string tokenRequest)
+        {
+            if (string.IsNullOrEmpty(tokenRequest) || !tokenRequest.StartsWith("Bearer "))
+            {
+                return BadRequest("Invalid token");
+            }
+
+            var token = tokenRequest.Substring("Bearer ".Length);
+            var userDto = await _authService.MeAync(token);
+
+            if (userDto is null)
+            {
+                return Unauthorized(new ApiResponse(401 , "Email not found in token"));
+            }
+
+            return Ok(new ApiResponseWithData(200, "User is found Successfuly!")
+            {
+                Data = userDto
+            });
+        }
+
+
     }
 }

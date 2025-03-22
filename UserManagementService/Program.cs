@@ -1,5 +1,6 @@
 using Data.Layer.Contexts;
 using Data.Layer.Entities;
+using Data.Layer.Helper;
 using Data.Layer.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -8,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Service.Layer;
 using System.Text;
+using System.Text.Json.Serialization;
 using UserManagementService.Error;
 using UserManagementService.Middleware;
 
@@ -44,7 +46,11 @@ namespace UserManagementService
                });
 
 
-            builder.Services.AddControllers();
+            builder.Services.AddControllers().AddJsonOptions(options =>
+
+            options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter())
+
+            ); ;
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -56,6 +62,8 @@ namespace UserManagementService
 
 
             builder.Services.AddScoped(typeof(IAuthService), typeof(AuthService));
+
+            builder.Services.AddAutoMapper(typeof(MappingProfile));
 
             builder.Services.AddIdentity<User, IdentityRole>(option =>
             {

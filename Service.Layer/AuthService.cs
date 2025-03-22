@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using System.Security.Cryptography;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 
 
 namespace Service.Layer
@@ -23,12 +24,15 @@ namespace Service.Layer
     {
         private readonly IConfiguration _configuration;
         private readonly UserManager<User> _userManager;
+        private readonly IMapper _mapper;
 
         public AuthService(IConfiguration configuration, 
-                            UserManager<User> userManager)
+                            UserManager<User> userManager,
+                            IMapper mapper)
         {
             _configuration = configuration;
             _userManager = userManager;
+            _mapper = mapper;
         }
 
         public async Task<string> GenerateTokenAsync(User user, UserManager<User> userManager)
@@ -38,7 +42,8 @@ namespace Service.Layer
                 new Claim(ClaimTypes.Email, user.Email),
                 new Claim(ClaimTypes.NameIdentifier, user.Id),
                 new Claim(ClaimTypes.SerialNumber , user.NationalId),
-                new Claim(ClaimTypes.GivenName , user.DisplayName)
+                new Claim(ClaimTypes.GivenName , user.DisplayName),
+                new Claim("ID" , user.Id),
             };
 
             var roles = await userManager.GetRolesAsync(user);
@@ -70,28 +75,29 @@ namespace Service.Layer
             if (user is null || !await _userManager.CheckPasswordAsync(user, loginDto.Password))
                 return null;
 
-            var userDto = new UserDto
-            {
-                DisplayName = user.DisplayName,
-                Email = user.Email,
-                Token = await GenerateTokenAsync(user, _userManager)
-            };
+
+            var userDTO = _mapper.Map<UserDto>(user);   
+
+            userDTO.Token = await GenerateTokenAsync(user, _userManager);
+
+            userDTO.Role = (await _userManager.GetRolesAsync(user)).First();
+
 
             if (user.RefreshTokens.Any(rt => rt.IsActive))
             {
                 var activerefreshToken = user.RefreshTokens.FirstOrDefault(rt => rt.IsActive);
-                userDto.RefreshToken = activerefreshToken.Token;
-                userDto.RefreshTokenExpiration = activerefreshToken.ExpiredOn;
+                userDTO.RefreshToken = activerefreshToken.Token;
+                userDTO.RefreshTokenExpiration = activerefreshToken.ExpiredOn;
             }
             else
             {
                 var refreshToken = GenerateRefreshToken();
-                userDto.RefreshToken = refreshToken.Token;
-                userDto.RefreshTokenExpiration = refreshToken.ExpiredOn;
+                userDTO.RefreshToken = refreshToken.Token;
+                userDTO.RefreshTokenExpiration = refreshToken.ExpiredOn;
                 user.RefreshTokens.Add(refreshToken);
                 await _userManager.UpdateAsync(user);
             }
-            return userDto;
+            return userDTO;
         }
 
 
@@ -113,17 +119,17 @@ namespace Service.Layer
             user.RefreshTokens.Add(newRefreshToken);
             await _userManager.UpdateAsync(user);
 
-            var userDto = new UserDto
-            {
-                IsAuthenticated = true,
-                Email = user.Email,
-                DisplayName = user.DisplayName,
-                Token = await GenerateTokenAsync(user, _userManager),
-                RefreshToken = newRefreshToken.Token,
-                RefreshTokenExpiration = newRefreshToken.ExpiredOn,
-            };
 
-            return userDto;
+            var userDTO = _mapper.Map<UserDto>(user);
+
+
+            userDTO.Token = await GenerateTokenAsync(user, _userManager);
+            userDTO.RefreshToken = newRefreshToken.Token;
+            userDTO.RefreshTokenExpiration = newRefreshToken.ExpiredOn;
+            userDTO.Role = (await _userManager.GetRolesAsync(user)).First();
+
+
+            return userDTO;
         }
 
         public async Task<bool> LogoutAsync(string refreshToken)
@@ -161,6 +167,46 @@ namespace Service.Layer
             };
         }
 
-       
+        public async Task<UserDto> MeAync(string token)
+        {
+            
+            var handler = new JwtSecurityTokenHandler();
+
+            var jwtToken = handler.ReadJwtToken(token);
+
+            
+            var emailClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email || c.Type == "email").Value;
+
+            var user = await _userManager.FindByEmailAsync(emailClaim);
+
+            if (user is null)
+                return null;
+
+            var userDTO = _mapper.Map<UserDto>(user);
+
+            userDTO.Token = token;
+
+
+            userDTO.Role = (await _userManager.GetRolesAsync(user)).First();
+
+
+            if (user.RefreshTokens.Any(rt => rt.IsActive))
+            {
+                var activerefreshToken = user.RefreshTokens.FirstOrDefault(rt => rt.IsActive);
+                userDTO.RefreshToken = activerefreshToken.Token;
+                userDTO.RefreshTokenExpiration = activerefreshToken.ExpiredOn;
+            }
+            else
+            {
+                var refreshToken = GenerateRefreshToken();
+                userDTO.RefreshToken = refreshToken.Token;
+                userDTO.RefreshTokenExpiration = refreshToken.ExpiredOn;
+                user.RefreshTokens.Add(refreshToken);
+                await _userManager.UpdateAsync(user);
+            }
+
+            return userDTO;
+
+        }
     }
 }

@@ -460,3 +460,4 @@ E:\GP\Auth Service\UserManagementService\obj\Debug\net8.0\refint\UserManagementS
 E:\GP\Auth Service\UserManagementService\obj\Debug\net8.0\UserManagementService.pdb
 E:\GP\Auth Service\UserManagementService\obj\Debug\net8.0\UserManagementService.genruntimeconfig.cache
 E:\GP\Auth Service\UserManagementService\obj\Debug\net8.0\ref\UserManagementService.dll
+E:\GP\Auth Service\UserManagementService\bin\Debug\net8.0\AutoMapper.dll
