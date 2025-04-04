@@ -60,7 +60,7 @@ namespace Service.Layer
                 issuer: _configuration["JWT:ValidIssuer"],
                 expires: DateTime.UtcNow.AddMinutes(double.Parse(_configuration["JWT:DurationInMinutes"] ?? "2")),
                 claims: authClaims,
-                signingCredentials: new SigningCredentials(authKey, SecurityAlgorithms.HmacSha256Signature)
+                signingCredentials: new SigningCredentials(authKey, SecurityAlgorithms.HmacSha256)
                 );
 
             return new JwtSecurityTokenHandler().WriteToken(token);
