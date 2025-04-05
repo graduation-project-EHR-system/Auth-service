@@ -44,10 +44,10 @@ namespace Service.Layer
         {
             var authClaims = new List<Claim>
             {
-                new Claim(ClaimTypes.Email, user.Email),
+                new Claim("Email", user.Email),
                 new Claim(ClaimTypes.NameIdentifier, user.Id),
-                new Claim(ClaimTypes.SerialNumber , user.NationalId),
-                new Claim(ClaimTypes.GivenName , user.DisplayName),
+                new Claim("NationalId" , user.NationalId),
+                new Claim("Name" , user.DisplayName),
                 new Claim("ID" , user.Id),
             };
 
@@ -55,7 +55,7 @@ namespace Service.Layer
 
             foreach (var role in roles)
             {
-                authClaims.Add(new Claim(ClaimTypes.Role, role));
+                authClaims.Add(new Claim("Role", role));
             }
             
             var authKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:SecurityKey"]));
@@ -65,7 +65,7 @@ namespace Service.Layer
                 issuer: _configuration["JWT:ValidIssuer"],
                 expires: DateTime.UtcNow.AddMinutes(double.Parse(_configuration["JWT:DurationInMinutes"] ?? "2")),
                 claims: authClaims,
-                signingCredentials: new SigningCredentials(authKey, SecurityAlgorithms.HmacSha256Signature)
+                signingCredentials: new SigningCredentials(authKey, SecurityAlgorithms.HmacSha256)
                 );
 
             return new JwtSecurityTokenHandler().WriteToken(token);
@@ -180,7 +180,7 @@ namespace Service.Layer
             var jwtToken = handler.ReadJwtToken(token);
 
             
-            var emailClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email || c.Type == "email").Value;
+            var emailClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "Email" || c.Type == "email").Value;
 
             var user = await _userManager.FindByEmailAsync(emailClaim);
 
