@@ -8,6 +8,7 @@ using Data.Layer.Dtos;
 using UserManagementService.Error;
 using UserManagementService.Helper;
 using Microsoft.IdentityModel.Tokens;
+using System.Diagnostics;
 
 namespace UserManagementService.Controllers
 {
@@ -92,6 +93,25 @@ namespace UserManagementService.Controllers
             });
         }
 
+        [HttpPost("request-reset-password")]
+        public async Task<ActionResult> RequestResetPassword([FromBody] RequestResetPasswordDto requestResetPasswordDto)
+        {
+            var success = await _authService.RequestPasswordResetAsync(requestResetPasswordDto);
+            if (!success)
+                return NotFound(new ApiResponse(404 , "User not found."));
+
+            return Ok(new ApiResponse(200, "Password reset email sent.") );
+        }
+
+        [HttpPost("reset-password")]
+        public async Task<ActionResult<IdentityResult>> ResetPassword([FromBody] ResetPasswordDto resetPasswordDto)
+        {
+            var result = await _authService.ResetPasswordAsync(resetPasswordDto);
+            if (!result)
+                return IdentityResult.Failed(new IdentityError { Description = "Password reset failed." });
+
+            return Ok(new ApiResponse(200, "Password has been reset successfully.") );
+        }
 
     }
 }

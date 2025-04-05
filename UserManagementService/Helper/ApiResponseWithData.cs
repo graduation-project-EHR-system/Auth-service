@@ -5,7 +5,7 @@ namespace UserManagementService.Helper
     public class ApiResponseWithData : ApiResponse
     {
         public UserDto Data { get; set; }
-        public ApiResponseWithData(int statusCode , string? message = null) : base(statusCode, message)
+        public ApiResponseWithData(int Status , string? message = null) : base(Status, message)
         {
             
         }

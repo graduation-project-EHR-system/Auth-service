@@ -18,10 +18,12 @@ namespace Data.Layer.Interfaces
         public Task<UserDto> MeAync(string token);
 
         public Task<bool> LogoutAsync(string refreshToken);
-        public Task<UserDto> GetRefreshToken(string refreshToken);  
 
+        public Task<UserDto> GetRefreshToken(string refreshToken);
 
+        Task<bool> RequestPasswordResetAsync(RequestResetPasswordDto requestResetPasswordDto);
 
+        Task<bool> ResetPasswordAsync(ResetPasswordDto resetPasswordDto);
 
     }
 }

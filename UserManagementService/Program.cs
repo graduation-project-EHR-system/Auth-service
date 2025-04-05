@@ -4,8 +4,10 @@ using Data.Layer.Helper;
 using Data.Layer.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Service.Layer;
 using System.Text;
@@ -46,6 +48,16 @@ namespace UserManagementService
                });
 
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllOrigins", builder =>
+                {
+                    builder.AllowAnyOrigin()       
+                           .AllowAnyMethod()      
+                           .AllowAnyHeader();      
+                });
+            });
+
             builder.Services.AddControllers().AddJsonOptions(options =>
 
             options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter())
@@ -62,6 +74,7 @@ namespace UserManagementService
 
 
             builder.Services.AddScoped(typeof(IAuthService), typeof(AuthService));
+            builder.Services.AddScoped(typeof(IEmailSend), typeof(EmailSender));
 
             builder.Services.AddAutoMapper(typeof(MappingProfile));
 
@@ -71,8 +84,10 @@ namespace UserManagementService
                 option.Password.RequireUppercase = true; 
                 option.Password.RequireDigit = true;     
                 option.Password.RequireNonAlphanumeric = true; 
-                option.Password.RequiredLength = 8;   
-            }).AddEntityFrameworkStores<UserDbContext>();
+                option.Password.RequiredLength = 8;
+                option.Tokens.PasswordResetTokenProvider = "Default";
+
+            }).AddEntityFrameworkStores<UserDbContext>().AddDefaultTokenProviders();
 
 
             builder.Services.Configure<ApiBehaviorOptions>(options =>
@@ -119,6 +134,8 @@ namespace UserManagementService
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            app.UseCors("AllowAllOrigins");
 
             app.UseExceptionMiddleWare();
 

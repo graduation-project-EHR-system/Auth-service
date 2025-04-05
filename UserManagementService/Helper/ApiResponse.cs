@@ -2,17 +2,17 @@
 {
     public class ApiResponse
     {
-        public int StatusCode { get; set; }
+        public int Status { get; set; }
         public string Message { get; set; }
-        public ApiResponse(int statusCode, string? message = null)
+        public ApiResponse(int Status, string? message = null)
         {
-            StatusCode = statusCode;
-            Message = message ?? GetDefaultForErrorResponse(statusCode);
+            Status = Status;
+            Message = message ?? GetDefaultForErrorResponse(Status);
         }
 
-        private string GetDefaultForErrorResponse(int statusCode)
+        private string GetDefaultForErrorResponse(int Status)
         {
-            return statusCode switch
+            return Status switch
             {
                 400 => "Error 400: Bad Request.",
                 401 => "Error 401: Unauthorized.",

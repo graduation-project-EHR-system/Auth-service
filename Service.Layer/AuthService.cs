@@ -15,6 +15,8 @@ using System.Security.Cryptography;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.EntityFrameworkCore;
 using AutoMapper;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using Data.Layer.Helper.SendEmail;
 
 
 namespace Service.Layer
@@ -23,14 +25,17 @@ namespace Service.Layer
     public class AuthService : IAuthService
     {
         private readonly IConfiguration _configuration;
+        private readonly IEmailSend _emailSender;
         private readonly UserManager<User> _userManager;
         private readonly IMapper _mapper;
 
         public AuthService(IConfiguration configuration, 
                             UserManager<User> userManager,
-                            IMapper mapper)
+                            IMapper mapper,
+                            IEmailSend emailSender)
         {
             _configuration = configuration;
+            _emailSender = emailSender;
             _userManager = userManager;
             _mapper = mapper;
         }
@@ -207,6 +212,41 @@ namespace Service.Layer
 
             return userDTO;
 
+        }
+
+        public async Task<bool> RequestPasswordResetAsync(RequestResetPasswordDto requestResetPasswordDto)
+        {
+            var user = await _userManager.FindByEmailAsync(requestResetPasswordDto.Email);
+            if (user is null) return false;
+
+            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+            var link = $"https://localhost:5259/reset-password?email={Uri.EscapeDataString(requestResetPasswordDto.Email)}&token={Uri.EscapeDataString(token)}";
+
+            Email email = new Email
+            {
+                To = requestResetPasswordDto.Email,
+                Subject = "Reset Password",
+                Body = $"Click here to reset your password: {link}"
+            };
+
+            await _emailSender.SendEmailAsync(email);
+
+            return true;
+        }
+
+        public async Task<bool> ResetPasswordAsync(ResetPasswordDto resetPasswordDto)
+        {
+            var user = await _userManager.FindByEmailAsync(resetPasswordDto.Email);
+            if (user == null) return false;
+            
+            var result  = await _userManager.ResetPasswordAsync(user, resetPasswordDto.Token, resetPasswordDto.NewPassword); 
+
+            if(result.Succeeded)
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }
