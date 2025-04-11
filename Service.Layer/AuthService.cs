@@ -226,7 +226,7 @@ namespace Service.Layer
             {
                 To = requestResetPasswordDto.Email,
                 Subject = "Reset Password",
-                Body = $"Click here to reset your password: {link}"
+                Body = $"Click the link below to reset your password:\n{link}"
             };
 
             await _emailSender.SendEmailAsync(email);
