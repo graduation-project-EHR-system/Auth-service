@@ -4,3 +4,4 @@ Service.Layer/bin
 Service.Layer/obj
 UserManagementService/bin
 UserManagementService/obj
+UserManagementService/obj/*
