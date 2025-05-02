@@ -1,6 +1,6 @@
 Data.Layer/bin
-Data.Layer.obj
+Data.Layer/obj
 Service.Layer/bin
-Service.Layer.obj
+Service.Layer/obj
 UserManagementService/bin
 UserManagementService/obj
