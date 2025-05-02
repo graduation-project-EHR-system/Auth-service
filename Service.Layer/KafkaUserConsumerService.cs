@@ -5,7 +5,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Service.Layer.Configuration;
-using Service.Layer.DTO;
+using Data.Layer.Dtos;
+using UserManagementService.Interfaces;
 
 public class KafkaUserConsumerService : BackgroundService
 {
@@ -48,10 +49,10 @@ public class KafkaUserConsumerService : BackgroundService
 
                 switch (topic)
                 {
-                    // case "user.created":
-                        // var createdUser = JsonSerializer.Deserialize<KafkaUserEvent>(message);
-                        // await userService.HandleUserCreatedAsync(createdUser);
-                        // break;
+                    case "user.created":
+                        var createdUser = JsonSerializer.Deserialize<KafkaUserEvent>(message);
+                        await userService.HandleUserCreatedEventAsync(createdUser);
+                        break;
                         // case KafkaTopic.USER_UPDATED.GetTopicName():
                         //     var updatedUser = JsonSerializer.Deserialize<KafkaUserEvent>(message);
                         //     // await userService.HandleUserUpdatedAsync(updatedUser);

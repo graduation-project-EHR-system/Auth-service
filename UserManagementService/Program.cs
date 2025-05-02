@@ -11,10 +11,10 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Service.Layer;
 using Service.Layer.Configuration;
-using Service.Layer.DTO;
 using System.Text;
 using System.Text.Json.Serialization;
 using UserManagementService.Error;
+using UserManagementService.Interfaces;
 using UserManagementService.Middleware;
 
 namespace UserManagementService
