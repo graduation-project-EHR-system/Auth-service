@@ -1,3 +1,4 @@
+using AuthServiceConsumer;
 using Data.Layer.Contexts;
 using Data.Layer.Entities;
 using Data.Layer.Helper;
@@ -72,6 +73,7 @@ namespace UserManagementService
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
 
+            builder.Services.AddHostedService<KafkaUserConsumer>();
 
             builder.Services.AddScoped(typeof(IAuthService), typeof(AuthService));
             builder.Services.AddScoped(typeof(IEmailSend), typeof(EmailSender));
