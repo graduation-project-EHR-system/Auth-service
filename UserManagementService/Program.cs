@@ -1,4 +1,3 @@
-using AuthServiceConsumer;
 using Data.Layer.Contexts;
 using Data.Layer.Entities;
 using Data.Layer.Helper;
@@ -11,9 +10,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Service.Layer;
+using Service.Layer.Configuration;
 using System.Text;
 using System.Text.Json.Serialization;
 using UserManagementService.Error;
+using UserManagementService.Interfaces;
 using UserManagementService.Middleware;
 
 namespace UserManagementService
@@ -53,9 +54,9 @@ namespace UserManagementService
             {
                 options.AddPolicy("AllowAllOrigins", builder =>
                 {
-                    builder.AllowAnyOrigin()       
-                           .AllowAnyMethod()      
-                           .AllowAnyHeader();      
+                    builder.AllowAnyOrigin()
+                           .AllowAnyMethod()
+                           .AllowAnyHeader();
                 });
             });
 
@@ -73,19 +74,20 @@ namespace UserManagementService
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
 
-            builder.Services.AddHostedService<KafkaUserConsumer>();
 
             builder.Services.AddScoped(typeof(IAuthService), typeof(AuthService));
             builder.Services.AddScoped(typeof(IEmailSend), typeof(EmailSender));
+            builder.Services.AddScoped(typeof(IUserService), typeof(UserService));
+            builder.Services.AddHostedService<KafkaUserConsumerService>();
 
-            builder.Services.AddAutoMapper(typeof(MappingProfile));
+            // builder.Services.AddAutoMapper(typeof(MappingProfile), typeof(KafkaUserEvent));
 
             builder.Services.AddIdentity<User, IdentityRole>(option =>
             {
-                option.Password.RequireLowercase = true;  
-                option.Password.RequireUppercase = true; 
-                option.Password.RequireDigit = true;     
-                option.Password.RequireNonAlphanumeric = true; 
+                option.Password.RequireLowercase = true;
+                option.Password.RequireUppercase = true;
+                option.Password.RequireDigit = true;
+                option.Password.RequireNonAlphanumeric = true;
                 option.Password.RequiredLength = 8;
                 option.Tokens.PasswordResetTokenProvider = "Default";
 
@@ -107,8 +109,14 @@ namespace UserManagementService
 
                     return new BadRequestObjectResult(response);
                 };
-            }); 
+            });
 
+            builder.Services.Configure<KafkaConfig>(builder.Configuration.GetSection("Kafka"));
+            builder.Services.AddSingleton(resolver =>
+                resolver.GetRequiredService<IOptions<KafkaConfig>>().Value
+            );
+
+            builder.Services.AddHostedService<KafkaUserConsumerService>();
 
             var app = builder.Build();
             using var scope = app.Services.CreateScope(); /// instead of using try finally to dispose the scope
@@ -131,11 +139,11 @@ namespace UserManagementService
 
 
             // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
+            // if (app.Environment.IsDevelopment())
+            // {
+            app.UseSwagger();
+            app.UseSwaggerUI();
+            // }
 
             app.UseCors("AllowAllOrigins");
 

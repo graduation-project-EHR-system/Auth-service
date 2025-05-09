@@ -63,10 +63,10 @@
           }
         }
       },
-      "Confluent.Kafka/2.9.0": {
+      "Confluent.Kafka/2.10.0": {
         "type": "package",
         "dependencies": {
-          "librdkafka.redist": "2.8.0"
+          "librdkafka.redist": "2.10.0"
         },
         "compile": {
           "lib/net8.0/Confluent.Kafka.dll": {
@@ -92,7 +92,7 @@
           }
         }
       },
-      "librdkafka.redist/2.8.0": {
+      "librdkafka.redist/2.10.0": {
         "type": "package",
         "build": {
           "build/_._": {}
@@ -2257,6 +2257,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Confluent.Kafka": "2.10.0",
           "Data.Layer": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.12"
         },
@@ -2323,16 +2324,16 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
-    "Confluent.Kafka/2.9.0": {
-      "sha512": "pp+ut4RZBY07FdcGBaot/aOwmnBnyUl5NFFgnxU1tMLavRidoBLkrMFNyX/WNOsHr0N+g4dsAVZfJvUeIgY1YA==",
+    "Confluent.Kafka/2.10.0": {
+      "sha512": "beGF9x9Yw83NDTs0oyNdRHSR27HjF2NpwwCZZ45hEk1zE+yDW8JXuyzitfdYftLACCbuaBJCEh+ZW7Qxg9cdnA==",
       "type": "package",
-      "path": "confluent.kafka/2.9.0",
+      "path": "confluent.kafka/2.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
         "confluent-logo.png",
-        "confluent.kafka.2.9.0.nupkg.sha512",
+        "confluent.kafka.2.10.0.nupkg.sha512",
         "confluent.kafka.nuspec",
         "lib/net462/Confluent.Kafka.dll",
         "lib/net462/Confluent.Kafka.xml",
@@ -2362,10 +2363,10 @@
         "logo.png"
       ]
     },
-    "librdkafka.redist/2.8.0": {
-      "sha512": "Gg8nPjn9+Sp6X+O1g9duKarCteFQjpkCVJS06ihVQf4PVnR/jPXkN3vwvWe5zP4L47xiEfU+6wIp4pbIvaQ6rQ==",
+    "librdkafka.redist/2.10.0": {
+      "sha512": "QOvg/8WapA3c5EwPojCjnLEdxJNjxJ5s2GO8VxrDV9BTpnXHHGJ14MPwcGKiQeiRsBvPoeoTKMOh5KYu/Wm3jw==",
       "type": "package",
-      "path": "librdkafka.redist/2.8.0",
+      "path": "librdkafka.redist/2.10.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2381,7 +2382,7 @@
         "build/native/lib/win/x86/win-x86-Release/v142/librdkafka.lib",
         "build/native/lib/win/x86/win-x86-Release/v142/librdkafkacpp.lib",
         "build/native/librdkafka.redist.targets",
-        "librdkafka.redist.2.8.0.nupkg.sha512",
+        "librdkafka.redist.2.10.0.nupkg.sha512",
         "librdkafka.redist.nuspec",
         "runtimes/linux-arm64/native/librdkafka.so",
         "runtimes/linux-x64/native/alpine-librdkafka.so",
@@ -5695,6 +5696,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Confluent.Kafka >= 2.10.0",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.12",
       "Service.Layer >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
@@ -5749,6 +5751,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Confluent.Kafka": {
+            "target": "Package",
+            "version": "[2.10.0, )"
+          },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
