@@ -1,4 +1,5 @@
 
+using Data.Layer.Entities;
 using System.Text.Json.Serialization;
 
 namespace Service.Layer.DTO
@@ -13,23 +14,29 @@ namespace Service.Layer.DTO
 
           public class UserBody
           {
-               [JsonPropertyName("id")]
-               public string Id { get; set; }
+                [JsonPropertyName("id")]
+                public string Id { get; set; }
 
-               [JsonPropertyName("firstName")]
-               public string FirstName { get; set; }
+                [JsonPropertyName("firstName")]
+                public string FirstName { get; set; }
 
-               [JsonPropertyName("lastName")]
-               public string LastName { get; set; }
+                [JsonPropertyName("lastName")]
+                public string LastName { get; set; }
 
-               [JsonPropertyName("email")]
-               public string Email { get; set; }
+                [JsonPropertyName("email")]
+                public string Email { get; set; }
 
-               [JsonPropertyName("phone")]
-               public string Phone { get; set; }
+                [JsonPropertyName("phone")]
+                public string PhoneNumber { get; set; }
 
-               [JsonPropertyName("type")]
-               public string Type { get; set; }
-          }
+                [JsonPropertyName("role")]
+                public string Role { get; set; }
+
+                [JsonPropertyName("gender")]
+                public GenderOption Gender { get; set; }
+
+                [JsonPropertyName("nationalId")]
+                public string NationalId { get; set; }
+        }
      }
 }

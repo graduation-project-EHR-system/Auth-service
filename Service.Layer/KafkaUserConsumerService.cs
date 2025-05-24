@@ -7,6 +7,7 @@ using Microsoft.Extensions.Logging;
 using Service.Layer.Configuration;
 using Data.Layer.Dtos;
 using UserManagementService.Interfaces;
+using System.Text.Json.Serialization;
 
 public class KafkaUserConsumerService : BackgroundService
 {
@@ -24,11 +25,20 @@ public class KafkaUserConsumerService : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
+
+        _logger.LogInformation("Started listening to Kafka topics: {Topics}", string.Join(", ", _topics));
+
         var config = new ConsumerConfig
         {
             BootstrapServers = _kafkaConfig.BootstrapServers,
-            GroupId = _kafkaConfig.GroupId,
-            AutoOffsetReset = AutoOffsetReset.Earliest
+            GroupId = "user-consumer-debug-" + Guid.NewGuid().ToString(),
+            AutoOffsetReset = AutoOffsetReset.Earliest,
+            ApiVersionRequest = false,
+            BrokerVersionFallback = "0.10.0",
+            SocketTimeoutMs = 10000,
+            SessionTimeoutMs = 10000,
+            ReconnectBackoffMs = 1000,
+            EnableAutoCommit = true
         };
 
         using var consumer = new ConsumerBuilder<Ignore, string>(config).Build();
@@ -38,7 +48,12 @@ public class KafkaUserConsumerService : BackgroundService
         {
             try
             {
+                _logger.LogInformation("About to consume message from Kafka...");
+
                 var result = consumer.Consume(stoppingToken);
+
+                _logger.LogInformation("Consumed message: {Message}", result.Message?.Value);
+
                 var topic = result.Topic;
                 var message = result.Message.Value;
 
@@ -50,7 +65,12 @@ public class KafkaUserConsumerService : BackgroundService
                 switch (topic)
                 {
                     case "user.created":
-                        var createdUser = JsonSerializer.Deserialize<KafkaUserEvent>(message);
+                        var options = new JsonSerializerOptions
+                        {
+                            PropertyNameCaseInsensitive = true,
+                            Converters = { new JsonStringEnumConverter(JsonNamingPolicy.CamelCase) }  // CamelCase makes "Male" match enum
+                        };
+                        var createdUser = JsonSerializer.Deserialize<KafkaUserEvent>(message , options);
                         await userService.HandleUserCreatedEventAsync(createdUser);
                         break;
                         // case KafkaTopic.USER_UPDATED.GetTopicName():

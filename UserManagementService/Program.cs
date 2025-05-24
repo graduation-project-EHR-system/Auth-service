@@ -80,7 +80,7 @@ namespace UserManagementService
             builder.Services.AddScoped(typeof(IUserService), typeof(UserService));
             builder.Services.AddHostedService<KafkaUserConsumerService>();
 
-            // builder.Services.AddAutoMapper(typeof(MappingProfile), typeof(KafkaUserEvent));
+             builder.Services.AddAutoMapper(typeof(MappingProfile));
 
             builder.Services.AddIdentity<User, IdentityRole>(option =>
             {
@@ -116,6 +116,7 @@ namespace UserManagementService
                 resolver.GetRequiredService<IOptions<KafkaConfig>>().Value
             );
 
+
             builder.Services.AddHostedService<KafkaUserConsumerService>();
 
             var app = builder.Build();
@@ -139,11 +140,11 @@ namespace UserManagementService
 
 
             // Configure the HTTP request pipeline.
-            // if (app.Environment.IsDevelopment())
-            // {
-            app.UseSwagger();
-            app.UseSwaggerUI();
-            // }
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI();
+            }
 
             app.UseCors("AllowAllOrigins");
 

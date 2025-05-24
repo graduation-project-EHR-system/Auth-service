@@ -36,11 +36,11 @@ namespace Data.Layer.Contexts.Configurations
             builder.HasIndex(prop => prop.NationalId)
                 .IsUnique();
 
-            builder.Property(prop => prop.Age)
-                .IsRequired();
+            //builder.Property(prop => prop.Age)
+            //    .IsRequired();
 
             builder.Property(prop => prop.Address)
-                .IsRequired()
+              
                 .HasMaxLength(50)
                 .HasColumnType("nvarchar(50)");
 
@@ -65,7 +65,6 @@ namespace Data.Layer.Contexts.Configurations
                 .HasColumnType("nvarchar(5)");
 
             builder.Property(prop => prop.DateOfBirth)
-                .IsRequired()
                 .HasColumnType("date");
 
             builder.Property(prop => prop.CreatedAt)

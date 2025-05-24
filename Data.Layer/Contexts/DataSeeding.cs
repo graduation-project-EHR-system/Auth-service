@@ -26,7 +26,6 @@ namespace Data.Layer.Contexts
                     Email = "badry.anas@email.com",
                     NormalizedEmail = "BADRY.ANAS@EMAIL.COM",
                     UserName = "badry.anas",
-                    Address = "29 - mohamed mouaid - Salah mosque - Embabh",
                     NationalId = "12345678912340",
                     Gender = GenderOption.Male,
                     MaritalStatus = MaritalStatus.Married,
