@@ -24,6 +24,8 @@ public class KafkaUserConsumerService : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
+        await Task.Yield();
+
         var config = new ConsumerConfig
         {
             BootstrapServers = _kafkaConfig.BootstrapServers,
