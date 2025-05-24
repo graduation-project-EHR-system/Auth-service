@@ -1,4 +1,6 @@
 
+using Data.Layer.Entities;
+using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
 namespace Data.Layer.Dtos
@@ -26,10 +28,17 @@ namespace Data.Layer.Dtos
                public string Email { get; set; }
 
                [JsonPropertyName("phone")]
-               public string Phone { get; set; }
+               public string PhoneNumber { get; set; }
 
-               [JsonPropertyName("type")]
-               public string Type { get; set; }
-          }
+               [JsonPropertyName("role")]
+               public string Role { get; set; }
+
+               [JsonPropertyName("gender")]
+               public GenderOption Gender { get; set; }
+
+               [JsonPropertyName("nationalId")]
+               public string NationalId { get; set; }
+
+        }
      }
 }

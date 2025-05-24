@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Service.Layer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e970c267e462b6bc8138ae241af4898ab5957b80")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f132e261dee7d857fb2218d6437a428913d4672")]
+>>>>>>> feature/integrate-with-kafka
 [assembly: System.Reflection.AssemblyProductAttribute("Service.Layer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Service.Layer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

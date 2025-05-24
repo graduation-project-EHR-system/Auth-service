@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "HkmJIUCuS44=",
+=======
+  "dgSpecHash": "izV3USqf5l8=",
+>>>>>>> feature/integrate-with-kafka
   "success": true,
   "projectFilePath": "E:\\GP\\Auth Service\\UserManagementService\\UserManagementService.csproj",
   "expectedPackageFiles": [

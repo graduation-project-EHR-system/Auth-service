@@ -2257,7 +2257,11 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+<<<<<<< HEAD
           "Confluent.Kafka": "2.10.0",
+=======
+          "Confluent.Kafka": "1.9.2",
+>>>>>>> feature/integrate-with-kafka
           "Data.Layer": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.12"
         },
