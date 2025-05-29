@@ -25,12 +25,9 @@ public class KafkaUserConsumerService : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-<<<<<<< HEAD
         await Task.Yield();
-=======
 
         _logger.LogInformation("Started listening to Kafka topics: {Topics}", string.Join(", ", _topics));
->>>>>>> feature/integrate-with-kafka
 
         var config = new ConsumerConfig
         {
