@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Data.Layer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e970c267e462b6bc8138ae241af4898ab5957b80")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f132e261dee7d857fb2218d6437a428913d4672")]
->>>>>>> feature/integrate-with-kafka
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba64d9358df972e015d3cdc6f095728c3a9dc65a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Data.Layer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Data.Layer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

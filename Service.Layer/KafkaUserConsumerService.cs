@@ -89,7 +89,15 @@ public class KafkaUserConsumerService : BackgroundService
             }
             catch (ConsumeException ex)
             {
-                _logger.LogError($"Consume error: {ex.Message}");
+                _logger.LogError(ex, "Kafka consume error.");
+            }
+            catch (JsonException ex)
+            {
+                _logger.LogError(ex, "JSON deserialization error.");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Unexpected error while processing Kafka message.");
             }
         }
     }

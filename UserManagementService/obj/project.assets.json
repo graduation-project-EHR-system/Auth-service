@@ -2257,11 +2257,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-<<<<<<< HEAD
-          "Confluent.Kafka": "2.10.0",
-=======
           "Confluent.Kafka": "1.9.2",
->>>>>>> feature/integrate-with-kafka
           "Data.Layer": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.12"
         },
@@ -3122,9 +3118,12 @@
         "tools/EntityFrameworkCore.psm1",
         "tools/about_EntityFrameworkCore.help.txt",
         "tools/init.ps1",
-        "tools/net461/any/ef.exe",
-        "tools/net461/win-arm64/ef.exe",
-        "tools/net461/win-x86/ef.exe",
+        "tools/net461/any/gef.exe",
+        "tools/net461/any/gef.ico",
+        "tools/net461/win-arm64/gef.exe",
+        "tools/net461/win-arm64/gef.ico",
+        "tools/net461/win-x86/gef.exe",
+        "tools/net461/win-x86/gef.ico",
         "tools/netcoreapp2.0/any/ef.dll",
         "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
       ]
@@ -5792,5 +5791,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file E:\\GP\\Auth Service\\UserManagementService\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

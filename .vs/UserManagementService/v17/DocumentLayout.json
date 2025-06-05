@@ -3,11 +3,14 @@
   "WorkspaceRootPath": "E:\\GP\\Auth Service\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4B233DFD-CC81-4AD6-8996-54E22B5F0DD3}|Service.Layer\\Service.Layer.csproj|e:\\gp\\auth service\\service.layer\\kafkauserconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B233DFD-CC81-4AD6-8996-54E22B5F0DD3}|Service.Layer\\Service.Layer.csproj|solutionrelative:service.layer\\kafkauserconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|e:\\gp\\auth service\\usermanagementservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|e:\\gp\\auth service\\usermanagementservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -42,74 +45,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|e:\\gp\\auth service\\usermanagementservice\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{4B233DFD-CC81-4AD6-8996-54E22B5F0DD3}|Service.Layer\\Service.Layer.csproj|e:\\gp\\auth service\\service.layer\\kafkauserconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B233DFD-CC81-4AD6-8996-54E22B5F0DD3}|Service.Layer\\Service.Layer.csproj|solutionrelative:service.layer\\kafkauserconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> feature/integrate-with-kafka
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B233DFD-CC81-4AD6-8996-54E22B5F0DD3}|Service.Layer\\Service.Layer.csproj|e:\\gp\\auth service\\service.layer\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B233DFD-CC81-4AD6-8996-54E22B5F0DD3}|Service.Layer\\Service.Layer.csproj|solutionrelative:service.layer\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|e:\\gp\\auth service\\usermanagementservice\\helper\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\helper\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\dtos\\requestresetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\dtos\\requestresetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\contexts\\configurations\\userconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\contexts\\configurations\\userconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B233DFD-CC81-4AD6-8996-54E22B5F0DD3}|Service.Layer\\Service.Layer.csproj|e:\\gp\\auth service\\service.layer\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B233DFD-CC81-4AD6-8996-54E22B5F0DD3}|Service.Layer\\Service.Layer.csproj|solutionrelative:service.layer\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\contexts\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\contexts\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\interfaces\\iemailsend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\interfaces\\iemailsend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\dtos\\kafkauserevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\dtos\\kafkauserevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\contexts\\migrations\\20250512195811_updateaddressnullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\contexts\\migrations\\20250512195811_updateaddressnullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\contexts\\dataseeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\contexts\\dataseeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\contexts\\migrations\\20250512193256_updaterequiredaddresscolumnstononrequired.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\contexts\\migrations\\20250512193256_updaterequiredaddresscolumnstononrequired.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|e:\\gp\\auth service\\usermanagementservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DA179E60-B22B-4683-B364-576652E9CD1B}|UserManagementService\\UserManagementService.csproj|solutionrelative:usermanagementservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B233DFD-CC81-4AD6-8996-54E22B5F0DD3}|Service.Layer\\Service.Layer.csproj|e:\\gp\\auth service\\service.layer\\configuration\\kafkaconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B233DFD-CC81-4AD6-8996-54E22B5F0DD3}|Service.Layer\\Service.Layer.csproj|solutionrelative:service.layer\\configuration\\kafkaconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\contexts\\migrations\\20250512195429_updateaddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\contexts\\migrations\\20250512195429_updateaddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\contexts\\migrations\\20250512194902_updaterequiredcolumns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\contexts\\migrations\\20250512194902_updaterequiredcolumns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\contexts\\migrations\\20250512194135_updaterequiredaddresscolumnstononrequiredattembt2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\contexts\\migrations\\20250512194135_updaterequiredaddresscolumnstononrequiredattembt2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\contexts\\migrations\\20250512193117_updaterequiredcolumnstononrequired.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\contexts\\migrations\\20250512193117_updaterequiredcolumnstononrequired.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\contexts\\migrations\\20250512200527_updateallcolumns2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\contexts\\migrations\\20250512200527_updateallcolumns2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\contexts\\migrations\\20250512200232_updateallcolumns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\contexts\\migrations\\20250512200232_updateallcolumns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\helper\\sendemail\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\helper\\sendemail\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -119,11 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 6,
-=======
-          "SelectedChildIndex": 18,
->>>>>>> feature/integrate-with-kafka
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -139,8 +90,20 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "KafkaUserConsumerService.cs",
+              "DocumentMoniker": "E:\\GP\\Auth Service\\Service.Layer\\KafkaUserConsumerService.cs",
+              "RelativeDocumentMoniker": "Service.Layer\\KafkaUserConsumerService.cs",
+              "ToolTip": "E:\\GP\\Auth Service\\Service.Layer\\KafkaUserConsumerService.cs",
+              "RelativeToolTip": "Service.Layer\\KafkaUserConsumerService.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAAwGQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T18:11:48.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Data.Layer\\Entities\\User.cs",
@@ -152,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UserDto.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Dtos\\UserDto.cs",
               "RelativeDocumentMoniker": "Data.Layer\\Dtos\\UserDto.cs",
@@ -164,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "KafkaUserConsumer.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\KafkaConsumers\\KafkaUserConsumer.cs",
               "RelativeDocumentMoniker": "Data.Layer\\KafkaConsumers\\KafkaUserConsumer.cs",
@@ -176,216 +139,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\UserManagementService\\Program.cs",
               "RelativeDocumentMoniker": "UserManagementService\\Program.cs",
               "ToolTip": "E:\\GP\\Auth Service\\UserManagementService\\Program.cs",
               "RelativeToolTip": "UserManagementService\\Program.cs",
-              "ViewState": "AQIAAJoAAAAAAAAAAAAQwKQAAAABAAAA",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAQwKQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-05T15:16:57.463Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ExceptionMiddleware.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\UserManagementService\\Middleware\\ExceptionMiddleware.cs",
               "RelativeDocumentMoniker": "UserManagementService\\Middleware\\ExceptionMiddleware.cs",
               "ToolTip": "E:\\GP\\Auth Service\\UserManagementService\\Middleware\\ExceptionMiddleware.cs",
               "RelativeToolTip": "UserManagementService\\Middleware\\ExceptionMiddleware.cs",
               "ViewState": "AQIAADMAAAAAAAAAAAAgwC8AAAAIAAAA",
-=======
-              "DocumentIndex": 16,
-              "Title": "20250512200527_UpdateAllColumns2.cs",
-              "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\Migrations\\20250512200527_UpdateAllColumns2.cs",
-              "RelativeDocumentMoniker": "Data.Layer\\Contexts\\Migrations\\20250512200527_UpdateAllColumns2.cs",
-              "ToolTip": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\Migrations\\20250512200527_UpdateAllColumns2.cs",
-              "RelativeToolTip": "Data.Layer\\Contexts\\Migrations\\20250512200527_UpdateAllColumns2.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T20:05:27.166Z"
+              "WhenOpened": "2025-04-05T15:16:27.787Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserDbContext.cs",
-              "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\UserDbContext.cs",
-              "RelativeDocumentMoniker": "Data.Layer\\Contexts\\UserDbContext.cs",
-              "ToolTip": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\UserDbContext.cs",
-              "RelativeToolTip": "Data.Layer\\Contexts\\UserDbContext.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T20:04:38.62Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "20250512200232_UpdateAllColumns.cs",
-              "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\Migrations\\20250512200232_UpdateAllColumns.cs",
-              "RelativeDocumentMoniker": "Data.Layer\\Contexts\\Migrations\\20250512200232_UpdateAllColumns.cs",
-              "ToolTip": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\Migrations\\20250512200232_UpdateAllColumns.cs",
-              "RelativeToolTip": "Data.Layer\\Contexts\\Migrations\\20250512200232_UpdateAllColumns.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAYwCwAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T20:02:32.757Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "KafkaUserEvent.cs",
-              "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Dtos\\KafkaUserEvent.cs",
-              "RelativeDocumentMoniker": "Data.Layer\\Dtos\\KafkaUserEvent.cs",
-              "ToolTip": "E:\\GP\\Auth Service\\Data.Layer\\Dtos\\KafkaUserEvent.cs",
-              "RelativeToolTip": "Data.Layer\\Dtos\\KafkaUserEvent.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAywAAAAAAAAAAA",
->>>>>>> feature/integrate-with-kafka
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T20:01:22.646Z"
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ApiResponse.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\UserManagementService\\Helper\\ApiResponse.cs",
               "RelativeDocumentMoniker": "UserManagementService\\Helper\\ApiResponse.cs",
               "ToolTip": "E:\\GP\\Auth Service\\UserManagementService\\Helper\\ApiResponse.cs",
               "RelativeToolTip": "UserManagementService\\Helper\\ApiResponse.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAkwAQAAAAZAAAA",
-=======
-              "DocumentIndex": 7,
-              "Title": "20250512195811_UpdateAddressNullable.cs",
-              "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\Migrations\\20250512195811_UpdateAddressNullable.cs",
-              "RelativeDocumentMoniker": "Data.Layer\\Contexts\\Migrations\\20250512195811_UpdateAddressNullable.cs",
-              "ToolTip": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\Migrations\\20250512195811_UpdateAddressNullable.cs",
-              "RelativeToolTip": "Data.Layer\\Contexts\\Migrations\\20250512195811_UpdateAddressNullable.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAuwAAAAAAAAAAA",
->>>>>>> feature/integrate-with-kafka
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T19:58:11.352Z"
+              "WhenOpened": "2025-04-05T15:10:27.593Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "20250512195429_UpdateAddress.cs",
-              "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\Migrations\\20250512195429_UpdateAddress.cs",
-              "RelativeDocumentMoniker": "Data.Layer\\Contexts\\Migrations\\20250512195429_UpdateAddress.cs",
-              "ToolTip": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\Migrations\\20250512195429_UpdateAddress.cs",
-              "RelativeToolTip": "Data.Layer\\Contexts\\Migrations\\20250512195429_UpdateAddress.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T19:54:29.552Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "20250512194902_UpdateRequiredColumns.cs",
-              "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\Migrations\\20250512194902_UpdateRequiredColumns.cs",
-              "RelativeDocumentMoniker": "Data.Layer\\Contexts\\Migrations\\20250512194902_UpdateRequiredColumns.cs",
-              "ToolTip": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\Migrations\\20250512194902_UpdateRequiredColumns.cs",
-              "RelativeToolTip": "Data.Layer\\Contexts\\Migrations\\20250512194902_UpdateRequiredColumns.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAmwAcAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T19:49:02.843Z"
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AccountController.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\UserManagementService\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "UserManagementService\\Controllers\\AccountController.cs",
               "ToolTip": "E:\\GP\\Auth Service\\UserManagementService\\Controllers\\AccountController.cs",
               "RelativeToolTip": "UserManagementService\\Controllers\\AccountController.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAQwCIAAAA2AAAA",
-=======
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "Data.Layer\\Entities\\User.cs",
-              "ToolTip": "E:\\GP\\Auth Service\\Data.Layer\\Entities\\User.cs",
-              "RelativeToolTip": "Data.Layer\\Entities\\User.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAYwBsAAAAYAAAA",
->>>>>>> feature/integrate-with-kafka
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T19:29:14.838Z"
+              "WhenOpened": "2025-04-05T15:06:45.895Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "20250512194135_UpdateRequiredAddressColumnsToNonRequiredattembt2.cs",
-              "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\Migrations\\20250512194135_UpdateRequiredAddressColumnsToNonRequiredattembt2.cs",
-              "RelativeDocumentMoniker": "Data.Layer\\Contexts\\Migrations\\20250512194135_UpdateRequiredAddressColumnsToNonRequiredattembt2.cs",
-              "ToolTip": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\Migrations\\20250512194135_UpdateRequiredAddressColumnsToNonRequiredattembt2.cs",
-              "RelativeToolTip": "Data.Layer\\Contexts\\Migrations\\20250512194135_UpdateRequiredAddressColumnsToNonRequiredattembt2.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAUwDkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T19:41:35.131Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DataSeeding.cs",
-              "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\DataSeeding.cs",
-              "RelativeDocumentMoniker": "Data.Layer\\Contexts\\DataSeeding.cs",
-              "ToolTip": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\DataSeeding.cs",
-              "RelativeToolTip": "Data.Layer\\Contexts\\DataSeeding.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAA1wBMAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T19:40:19.799Z"
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "EmailSender.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Service.Layer\\EmailSender.cs",
               "RelativeDocumentMoniker": "Service.Layer\\EmailSender.cs",
               "ToolTip": "E:\\GP\\Auth Service\\Service.Layer\\EmailSender.cs",
               "RelativeToolTip": "Service.Layer\\EmailSender.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAA2wBUAAAAaAAAA",
-=======
-              "DocumentIndex": 9,
-              "Title": "20250512193256_UpdateRequiredAddressColumnsToNonRequired.cs",
-              "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\Migrations\\20250512193256_UpdateRequiredAddressColumnsToNonRequired.cs",
-              "RelativeDocumentMoniker": "Data.Layer\\Contexts\\Migrations\\20250512193256_UpdateRequiredAddressColumnsToNonRequired.cs",
-              "ToolTip": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\Migrations\\20250512193256_UpdateRequiredAddressColumnsToNonRequired.cs",
-              "RelativeToolTip": "Data.Layer\\Contexts\\Migrations\\20250512193256_UpdateRequiredAddressColumnsToNonRequired.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
->>>>>>> feature/integrate-with-kafka
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T19:32:57.327Z"
+              "WhenOpened": "2025-04-05T14:37:41.027Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "20250512193117_UpdateRequiredColumnsToNonRequired.cs",
-              "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\Migrations\\20250512193117_UpdateRequiredColumnsToNonRequired.cs",
-              "RelativeDocumentMoniker": "Data.Layer\\Contexts\\Migrations\\20250512193117_UpdateRequiredColumnsToNonRequired.cs",
-              "ToolTip": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\Migrations\\20250512193117_UpdateRequiredColumnsToNonRequired.cs",
-              "RelativeToolTip": "Data.Layer\\Contexts\\Migrations\\20250512193117_UpdateRequiredColumnsToNonRequired.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAQwCcAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T19:31:17.35Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserConfigurations.cs",
-              "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\Configurations\\UserConfigurations.cs",
-              "RelativeDocumentMoniker": "Data.Layer\\Contexts\\Configurations\\UserConfigurations.cs",
-              "ToolTip": "E:\\GP\\Auth Service\\Data.Layer\\Contexts\\Configurations\\UserConfigurations.cs",
-              "RelativeToolTip": "Data.Layer\\Contexts\\Configurations\\UserConfigurations.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAIA2wEIAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T19:29:33.628Z"
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "IEmailSend.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Interfaces\\IEmailSend.cs",
               "RelativeDocumentMoniker": "Data.Layer\\Interfaces\\IEmailSend.cs",
@@ -397,65 +212,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-=======
-              "DocumentIndex": 10,
->>>>>>> feature/integrate-with-kafka
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\GP\\Auth Service\\UserManagementService\\appsettings.json",
               "RelativeDocumentMoniker": "UserManagementService\\appsettings.json",
               "ToolTip": "E:\\GP\\Auth Service\\UserManagementService\\appsettings.json",
               "RelativeToolTip": "UserManagementService\\appsettings.json",
-<<<<<<< HEAD
               "ViewState": "AQIAAA8AAAAAAAAAAAAUwBwAAAAAAAAA",
-=======
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAApAAAA",
->>>>>>> feature/integrate-with-kafka
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-12T03:58:18.167Z"
+              "WhenOpened": "2025-04-05T14:18:25.546Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "E:\\GP\\Auth Service\\Service.Layer\\UserService.cs",
-              "RelativeDocumentMoniker": "Service.Layer\\UserService.cs",
-              "ToolTip": "E:\\GP\\Auth Service\\Service.Layer\\UserService.cs",
-              "RelativeToolTip": "Service.Layer\\UserService.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAzwEYAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T03:43:25.279Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\GP\\Auth Service\\UserManagementService\\Program.cs",
-              "RelativeDocumentMoniker": "UserManagementService\\Program.cs",
-              "ToolTip": "E:\\GP\\Auth Service\\UserManagementService\\Program.cs",
-              "RelativeToolTip": "UserManagementService\\Program.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAHsAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T03:41:58.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "KafkaUserConsumerService.cs",
-              "DocumentMoniker": "E:\\GP\\Auth Service\\Service.Layer\\KafkaUserConsumerService.cs",
-              "RelativeDocumentMoniker": "Service.Layer\\KafkaUserConsumerService.cs",
-              "ToolTip": "E:\\GP\\Auth Service\\Service.Layer\\KafkaUserConsumerService.cs",
-              "RelativeToolTip": "Service.Layer\\KafkaUserConsumerService.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAYwEkAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T03:39:43.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Email.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Helper\\SendEmail\\Email.cs",
               "RelativeDocumentMoniker": "Data.Layer\\Helper\\SendEmail\\Email.cs",
@@ -467,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AuthService.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Service.Layer\\AuthService.cs",
               "RelativeDocumentMoniker": "Service.Layer\\AuthService.cs",
@@ -479,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ResetPasswordDto.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Dtos\\ResetPasswordDto.cs",
               "RelativeDocumentMoniker": "Data.Layer\\Dtos\\ResetPasswordDto.cs",
@@ -491,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "RequestResetPasswordDto.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Dtos\\RequestResetPasswordDto.cs",
               "RelativeDocumentMoniker": "Data.Layer\\Dtos\\RequestResetPasswordDto.cs",
@@ -503,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Interfaces\\IAuthService.cs",
               "RelativeDocumentMoniker": "Data.Layer\\Interfaces\\IAuthService.cs",
@@ -512,17 +281,6 @@
               "ViewState": "AQIAAAMAAAAAAAAAAAAMwA8AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-05T13:33:21.552Z"
-=======
-              "DocumentIndex": 11,
-              "Title": "KafkaConfig.cs",
-              "DocumentMoniker": "E:\\GP\\Auth Service\\Service.Layer\\Configuration\\KafkaConfig.cs",
-              "RelativeDocumentMoniker": "Service.Layer\\Configuration\\KafkaConfig.cs",
-              "ToolTip": "E:\\GP\\Auth Service\\Service.Layer\\Configuration\\KafkaConfig.cs",
-              "RelativeToolTip": "Service.Layer\\Configuration\\KafkaConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T03:39:38.591Z"
->>>>>>> feature/integrate-with-kafka
             }
           ]
         }
