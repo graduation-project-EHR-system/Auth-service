@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "B0jytlEg3HI=",
+  "dgSpecHash": "AORZbGjW4xg=",
   "success": true,
   "projectFilePath": "E:\\GP\\Auth Service\\UserManagementService\\UserManagementService.csproj",
   "expectedPackageFiles": [
@@ -114,10 +114,10 @@
   ],
   "logs": [
     {
-      "code": "Undefined",
+      "code": "NU1900",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problem reading the cache file E:\\GP\\Auth Service\\UserManagementService\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
     }
   ]
 }

@@ -10,6 +10,7 @@ using UserManagementService.Interfaces;
 namespace Service.Layer
 {
 
+
     public class UserService : IUserService
     {
         private readonly UserManager<User> _userManager;
@@ -78,6 +79,91 @@ namespace Service.Layer
             return user;
 
         }
+
+        public async Task<User> HandleUserUpdatedAsync(KafkaUserEvent userEvent)
+        {
+            _logger.LogInformation("Handling user Updating event at {time}", DateTime.UtcNow);
+
+            var user = new User
+            {
+                UserName = userEvent.Body.Email.Split("@")[0],
+                DisplayName = userEvent.Body.Email.Split("@")[0],
+                Id = userEvent.Body.Id,
+                FirstName = userEvent.Body.FirstName,
+                LastName = userEvent.Body.LastName,
+                Email = userEvent.Body.Email,
+                PhoneNumber = userEvent.Body.PhoneNumber,
+                Gender = userEvent.Body.Gender,
+                NationalId = userEvent.Body.NationalId,
+            };
+
+            var generatedPassword = GenerateRandomPassword();
+
+            try
+            {
+                var result = await _userManager.UpdateAsync(user);
+
+                if (!result.Succeeded)
+                {
+                    _logger.LogError("User Updating failed. Errors: {errors}",
+                        string.Join(", ", result.Errors.Select(e => e.Description)));
+                    return null;
+                }
+
+                _logger.LogInformation("User Updated successfully at {time}", DateTime.UtcNow);
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogInformation("User Updated Failed at {time}", DateTime.UtcNow);
+                _logger.LogError(ex, "Error Updating user: {message}", ex.Message);
+            }
+
+            return user;
+        }
+
+
+        public async Task<bool> HandleUserDeletedAsync(KafkaUserEvent userEvent)
+        {
+            _logger.LogInformation("Handling user deleing event at {time}", DateTime.UtcNow);
+
+            var user = new User
+            {
+                UserName = userEvent.Body.Email.Split("@")[0],
+                DisplayName = userEvent.Body.Email.Split("@")[0],
+                Id = userEvent.Body.Id,
+                FirstName = userEvent.Body.FirstName,
+                LastName = userEvent.Body.LastName,
+                Email = userEvent.Body.Email,
+                PhoneNumber = userEvent.Body.PhoneNumber,
+                Gender = userEvent.Body.Gender,
+                NationalId = userEvent.Body.NationalId,
+            };
+
+            try
+            {
+                var result = await _userManager.DeleteAsync(user);
+
+                if (!result.Succeeded)
+                {
+                    _logger.LogError("User Deleting failed. Errors: {errors}",
+                        string.Join(", ", result.Errors.Select(e => e.Description)));
+                    return false;
+                }
+
+                _logger.LogInformation("User Deleted successfully at {time}", DateTime.UtcNow);
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogInformation("User Deleted Failed at {time}", DateTime.UtcNow);
+                _logger.LogError(ex, "Error Deleting user: {message}", ex.Message);
+            }
+
+            return true;
+
+        }
+
 
         private string GenerateRandomPassword(int length = 10)
         {

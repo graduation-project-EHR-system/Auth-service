@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "E:\\GP\\Auth Service\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4B233DFD-CC81-4AD6-8996-54E22B5F0DD3}|Service.Layer\\Service.Layer.csproj|e:\\gp\\auth service\\service.layer\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B233DFD-CC81-4AD6-8996-54E22B5F0DD3}|Service.Layer\\Service.Layer.csproj|solutionrelative:service.layer\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|e:\\gp\\auth service\\data.layer\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C8BB678-10EE-40AE-B001-234B4A5E03F1}|Data.Layer\\Data.Layer.csproj|solutionrelative:data.layer\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4B233DFD-CC81-4AD6-8996-54E22B5F0DD3}|Service.Layer\\Service.Layer.csproj|e:\\gp\\auth service\\service.layer\\kafkauserconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B233DFD-CC81-4AD6-8996-54E22B5F0DD3}|Service.Layer\\Service.Layer.csproj|solutionrelative:service.layer\\kafkauserconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -74,8 +82,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "Data.Layer\\Interfaces\\IUserService.cs",
+              "ToolTip": "E:\\GP\\Auth Service\\Data.Layer\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "Data.Layer\\Interfaces\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T21:41:18.025Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -91,19 +112,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "E:\\GP\\Auth Service\\Service.Layer\\UserService.cs",
+              "RelativeDocumentMoniker": "Service.Layer\\UserService.cs",
+              "ToolTip": "E:\\GP\\Auth Service\\Service.Layer\\UserService.cs",
+              "RelativeToolTip": "Service.Layer\\UserService.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAuwEwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T21:40:27.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "KafkaUserConsumerService.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Service.Layer\\KafkaUserConsumerService.cs",
               "RelativeDocumentMoniker": "Service.Layer\\KafkaUserConsumerService.cs",
               "ToolTip": "E:\\GP\\Auth Service\\Service.Layer\\KafkaUserConsumerService.cs",
               "RelativeToolTip": "Service.Layer\\KafkaUserConsumerService.cs",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAAwGQAAAANAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAAwE4AAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T18:11:48.371Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Data.Layer\\Entities\\User.cs",
@@ -115,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "UserDto.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Dtos\\UserDto.cs",
               "RelativeDocumentMoniker": "Data.Layer\\Dtos\\UserDto.cs",
@@ -127,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "KafkaUserConsumer.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\KafkaConsumers\\KafkaUserConsumer.cs",
               "RelativeDocumentMoniker": "Data.Layer\\KafkaConsumers\\KafkaUserConsumer.cs",
@@ -139,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\UserManagementService\\Program.cs",
               "RelativeDocumentMoniker": "UserManagementService\\Program.cs",
@@ -147,12 +181,11 @@
               "RelativeToolTip": "UserManagementService\\Program.cs",
               "ViewState": "AQIAAEAAAAAAAAAAAAAQwKQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T15:16:57.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T15:16:57.463Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "ExceptionMiddleware.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\UserManagementService\\Middleware\\ExceptionMiddleware.cs",
               "RelativeDocumentMoniker": "UserManagementService\\Middleware\\ExceptionMiddleware.cs",
@@ -164,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "ApiResponse.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\UserManagementService\\Helper\\ApiResponse.cs",
               "RelativeDocumentMoniker": "UserManagementService\\Helper\\ApiResponse.cs",
@@ -176,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "AccountController.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\UserManagementService\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "UserManagementService\\Controllers\\AccountController.cs",
@@ -188,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "EmailSender.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Service.Layer\\EmailSender.cs",
               "RelativeDocumentMoniker": "Service.Layer\\EmailSender.cs",
@@ -200,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "IEmailSend.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Interfaces\\IEmailSend.cs",
               "RelativeDocumentMoniker": "Data.Layer\\Interfaces\\IEmailSend.cs",
@@ -212,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\GP\\Auth Service\\UserManagementService\\appsettings.json",
               "RelativeDocumentMoniker": "UserManagementService\\appsettings.json",
@@ -224,7 +257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Email.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Helper\\SendEmail\\Email.cs",
               "RelativeDocumentMoniker": "Data.Layer\\Helper\\SendEmail\\Email.cs",
@@ -236,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "AuthService.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Service.Layer\\AuthService.cs",
               "RelativeDocumentMoniker": "Service.Layer\\AuthService.cs",
@@ -248,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "ResetPasswordDto.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Dtos\\ResetPasswordDto.cs",
               "RelativeDocumentMoniker": "Data.Layer\\Dtos\\ResetPasswordDto.cs",
@@ -260,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "RequestResetPasswordDto.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Dtos\\RequestResetPasswordDto.cs",
               "RelativeDocumentMoniker": "Data.Layer\\Dtos\\RequestResetPasswordDto.cs",
@@ -272,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "E:\\GP\\Auth Service\\Data.Layer\\Interfaces\\IAuthService.cs",
               "RelativeDocumentMoniker": "Data.Layer\\Interfaces\\IAuthService.cs",

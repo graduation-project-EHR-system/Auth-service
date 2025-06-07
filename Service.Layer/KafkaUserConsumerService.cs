@@ -74,14 +74,14 @@ public class KafkaUserConsumerService : BackgroundService
                         var createdUser = JsonSerializer.Deserialize<KafkaUserEvent>(message , options);
                         await userService.HandleUserCreatedEventAsync(createdUser);
                         break;
-                        // case KafkaTopic.USER_UPDATED.GetTopicName():
-                        //     var updatedUser = JsonSerializer.Deserialize<KafkaUserEvent>(message);
-                        //     // await userService.HandleUserUpdatedAsync(updatedUser);
-                        //     break;
-                        // case KafkaTopic.USER_DELETED.GetTopicName():
-                        //     var deletedUser = JsonSerializer.Deserialize<KafkaUserEvent>(message);
-                        //     // await userService.HandleUserDeletedAsync(deletedUser);
-                        //     break;
+                    case "user.updated":
+                        var updatedUser = JsonSerializer.Deserialize<KafkaUserEvent>(message);
+                        await userService.HandleUserUpdatedAsync(updatedUser);
+                        break;
+                    case "user.deleted":
+                        var deletedUser = JsonSerializer.Deserialize<KafkaUserEvent>(message);
+                        await userService.HandleUserDeletedAsync(deletedUser);
+                        break;
                 }
             }
             catch (ConsumeException ex)
