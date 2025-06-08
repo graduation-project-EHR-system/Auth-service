@@ -55,7 +55,7 @@ namespace Service.Layer
 
             foreach (var role in roles)
             {
-                authClaims.Add(new Claim("Role", role));
+                authClaims.Add(new Claim(ClaimTypes.Role, role));
             }
             
             var authKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:SecurityKey"]));
