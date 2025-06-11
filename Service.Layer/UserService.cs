@@ -84,20 +84,22 @@ namespace Service.Layer
         {
             _logger.LogInformation("Handling user Updating event at {time}", DateTime.UtcNow);
 
-            var user = new User
+            var user = await _userManager.FindByIdAsync(userEvent.Body.Id);
+            if (user == null)
             {
-                UserName = userEvent.Body.Email.Split("@")[0],
-                DisplayName = userEvent.Body.Email.Split("@")[0],
-                Id = userEvent.Body.Id,
-                FirstName = userEvent.Body.FirstName,
-                LastName = userEvent.Body.LastName,
-                Email = userEvent.Body.Email,
-                PhoneNumber = userEvent.Body.PhoneNumber,
-                Gender = userEvent.Body.Gender,
-                NationalId = userEvent.Body.NationalId,
-            };
+                _logger.LogWarning("User with ID {id} not found", userEvent.Body.Id);
+                return null;
+            }
 
-            var generatedPassword = GenerateRandomPassword();
+            user.UserName = userEvent.Body.Email.Split("@")[0];
+            user.DisplayName = userEvent.Body.Email.Split("@")[0];
+            user.FirstName = userEvent.Body.FirstName;
+            user.LastName = userEvent.Body.LastName;
+            user.Email = userEvent.Body.Email;
+            user.PhoneNumber = userEvent.Body.PhoneNumber;
+            user.Gender = userEvent.Body.Gender;
+            user.NationalId = userEvent.Body.NationalId;
+
 
             try
             {
@@ -127,18 +129,22 @@ namespace Service.Layer
         {
             _logger.LogInformation("Handling user deleing event at {time}", DateTime.UtcNow);
 
-            var user = new User
+            var user = await _userManager.FindByIdAsync(userEvent.Body.Id);
+            if (user == null)
             {
-                UserName = userEvent.Body.Email.Split("@")[0],
-                DisplayName = userEvent.Body.Email.Split("@")[0],
-                Id = userEvent.Body.Id,
-                FirstName = userEvent.Body.FirstName,
-                LastName = userEvent.Body.LastName,
-                Email = userEvent.Body.Email,
-                PhoneNumber = userEvent.Body.PhoneNumber,
-                Gender = userEvent.Body.Gender,
-                NationalId = userEvent.Body.NationalId,
-            };
+                _logger.LogWarning("User with ID {id} not found", userEvent.Body.Id);
+                return false;
+            }
+
+            user.UserName = userEvent.Body.Email.Split("@")[0];
+            user.DisplayName = userEvent.Body.Email.Split("@")[0];
+            user.FirstName = userEvent.Body.FirstName;
+            user.LastName = userEvent.Body.LastName;
+            user.Email = userEvent.Body.Email;
+            user.PhoneNumber = userEvent.Body.PhoneNumber;
+            user.Gender = userEvent.Body.Gender;
+            user.NationalId = userEvent.Body.NationalId;
+
 
             try
             {

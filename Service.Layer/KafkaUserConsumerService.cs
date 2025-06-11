@@ -32,7 +32,7 @@ public class KafkaUserConsumerService : BackgroundService
         var config = new ConsumerConfig
         {
             BootstrapServers = _kafkaConfig.BootstrapServers,
-            GroupId = "user-consumer-debug-" + Guid.NewGuid().ToString(),
+            GroupId = _kafkaConfig.GroupId,
             AutoOffsetReset = AutoOffsetReset.Earliest,
             ApiVersionRequest = false,
             BrokerVersionFallback = "0.10.0",
@@ -45,6 +45,8 @@ public class KafkaUserConsumerService : BackgroundService
         using var consumer = new ConsumerBuilder<Ignore, string>(config).Build();
         consumer.Subscribe(_topics);
 
+
+
         while (!stoppingToken.IsCancellationRequested)
         {
             try
@@ -52,6 +54,7 @@ public class KafkaUserConsumerService : BackgroundService
                 _logger.LogInformation("About to consume message from Kafka...");
 
                 var result = consumer.Consume(stoppingToken);
+
 
                 _logger.LogInformation("Consumed message: {Message}", result.Message?.Value);
 
@@ -63,23 +66,28 @@ public class KafkaUserConsumerService : BackgroundService
                 using var scope = _serviceProvider.CreateScope();
                 var userService = scope.ServiceProvider.GetRequiredService<IUserService>();
 
+                _logger.LogInformation("Raw JSON message: {Json}", message);
+
+
+                var options = new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true,
+                    Converters = { new JsonStringEnumConverter(JsonNamingPolicy.CamelCase) }  // CamelCase makes "Male" match enum
+                };
+
                 switch (topic)
                 {
                     case "user.created":
-                        var options = new JsonSerializerOptions
-                        {
-                            PropertyNameCaseInsensitive = true,
-                            Converters = { new JsonStringEnumConverter(JsonNamingPolicy.CamelCase) }  // CamelCase makes "Male" match enum
-                        };
+                        
                         var createdUser = JsonSerializer.Deserialize<KafkaUserEvent>(message , options);
                         await userService.HandleUserCreatedEventAsync(createdUser);
                         break;
                     case "user.updated":
-                        var updatedUser = JsonSerializer.Deserialize<KafkaUserEvent>(message);
+                        var updatedUser = JsonSerializer.Deserialize<KafkaUserEvent>(message, options);
                         await userService.HandleUserUpdatedAsync(updatedUser);
                         break;
                     case "user.deleted":
-                        var deletedUser = JsonSerializer.Deserialize<KafkaUserEvent>(message);
+                        var deletedUser = JsonSerializer.Deserialize<KafkaUserEvent>(message, options);
                         await userService.HandleUserDeletedAsync(deletedUser);
                         break;
                 }
